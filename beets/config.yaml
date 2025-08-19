@@ -1,0 +1,31 @@
+directory: /Volumes/media/music
+
+plugins: embedart fetchart convert web export
+
+import:
+    move: no
+
+embedart:
+    auto: yes
+
+# convert:
+#     auto: no
+#     dest: /Volumes/media/converted_music
+#     copy_album_art: yes
+#     embed: yes
+#     format: m4a
+#     formats:
+#         m4a:
+#             command: ffmpeg -i $source -c:v copy -c:a libfdk_aac -vbr 5 $dest
+#             extension: m4a
+
+convert:
+    auto: no
+    dest: /Volumes/media/converted_hires
+    copy_album_art: yes
+    embed: yes
+    format: alac
+    # formats:
+    #     m4a:
+    #         command: ffmpeg -i $source -c:v copy -c:a libfdk_aac -vbr 5 $dest
+    #         extension: m4a
